@@ -1,0 +1,13 @@
+.About .about_bg1 img{
+    animation: none;
+    position: absolute;
+    /* border: 3px solid red; */
+    justify-self: flex-end;
+    width: 400px;
+}
+
+@media (max-width: 700px) {
+    .About .about_bg1 img{
+        width: 100px;
+    }
+}

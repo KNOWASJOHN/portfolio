@@ -1,0 +1,92 @@
+@keyframes revealing {
+    from {
+        transform: translateX(-100%);
+        filter: blur(10px);
+        opacity: 0.3;
+      }
+      to {
+          transform: translateX(0%);
+          filter: blur(0px);
+        opacity: 1;
+      }
+}
+
+@keyframes revealing2{
+    from {
+      transform: translateX(100%);
+      filter: blur(10px);
+      opacity: 0.3;
+}
+    to {
+            transform: translateX(0%);
+        filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes revealing3{
+    from {
+      transform: translateX(150%);
+      filter: blur(10px);
+      opacity: 0.3;
+}
+    to {
+            transform: translateX(0%);
+        filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+@keyframes videopop{
+  from{
+    scale: 0;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes card{
+  from{
+    filter: blur(10px);
+    scale: 0;
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to{
+    filter: blur(0px);
+    transform: translateY(0%);
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes project1{
+from{transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(10px);
+}
+to{transform: translateX(0%);
+  opacity:1;
+  filter: blur(0px);
+}
+}
+
+@keyframes project2{
+  from{transform: translateX(100%);
+    opacity: 0;
+    filter: blur(10px);}
+  to{transform: translateX(0%);
+    opacity:1;
+    filter: blur(0px);}
+  }
+
+
+@keyframes projectH{
+  from{opacity: 0;
+    filter: blur(10px);
+    transform: translateY(100%);}
+  to{transform: translateY(0%);
+    opacity:1;
+    filter: blur(0px);
+}}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.Home {
+    /* border: 3px solid red; */
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+.Home .a {
+    font-size: 40px;
+}
+
+.Home .Main_text {
+    font-family: Boldonse, system-ui;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.Home .sub_text {
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.About {
+    /* border: 3px solid red; */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    height: fit-content;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    text-align: center;
+    padding-bottom: 20vh;
+}
+
+
+.About .heading {
+    animation: revealing;
+    animation-delay: 50ms;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    /* border: 3px solid red; */
+    display: flex;
+    padding-left: 50px;
+    justify-content: flex-start;
+    font-family: "Boldonse", system-ui;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 10vh;
+}
+
+.About .sub_text p {
+    max-width: 40%;
+}
+
+.About .sub_text {
+    animation: revealing;
+    animation-delay: 500ms;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 45%;
+    /* border: 3px solid red; */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.6;
+    max-width: 100%;
+    padding-left: 50px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+.About img{
+    animation: revealing3;
+    animation-delay: 500ms;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    /* border: 3px solid red; */
+    align-self: flex-end;
+    margin-right: 200px;
+    margin-top: 120px;
+    width: 23vw;
+    position: absolute;
+}
+.Resume {
+    display: flex;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    /* border: 3px solid red; */
+    height: fit-content;
+}
+
+.Resume .heading {
+    animation: revealing2;
+    animation-delay: 50ms;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    align-self: flex-start;
+    justify-self: center;
+    margin-bottom: 50px;
+    /* border: 3px solid red; */
+    font-family: Boldonse, system-ui;
+    position: relative;
+    font-size: 4vw;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.Resume .sub_text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* border: 3px solid rgb(255, 255, 255); */
+}
+
+.Resume .sub_text ul {
+    padding: 0;
+}
+
+.Resume .sub_text li {
+    color: #ffffff;
+    justify-self: center;
+    width: 210px;
+    margin: 5px;
+    list-style-type: none;
+    /* border: 3px solid red; */
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 1.5vw;
+    box-shadow: inset 0 0 0 0 #ffc229;
+    transition: ease-in-out 0.5s;
+}
+
+.Resume .sub_text li {
+    animation: revealing2;
+    animation-delay: 500ms;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%;
+}
+
+.Resume .sub_text li:hover {
+    cursor: var(--cursor-url), auto;
+    box-shadow: inset 0 60px 0 0 #ffc229;
+    transition: ease-in-out 0.5s;
+    color: #000000;
+}
+
+@media (max-width: 700px) {
+    .Home .Main_text {
+        font-size: 30px;
+    }
+
+    .About {
+        border: 3px solid red;
+        height: fit-content;
+    }
+
+    .About .sub_text {
+        justify-items: center;
+        padding-left: 0;
+        font-size: 3vw;
+        max-width: 100%;
+    }
+
+    .About .sub_text p {
+        max-width: 90%;
+    }
+
+    .About .heading {
+        justify-content: center;
+        font-size: 5.5vw;
+        margin-top: 0vh;
+        padding-left: 0;
+    }
+
+    .About img {
+        margin: 10px auto 0 auto;
+        /* Center horizontally and add top margin */
+        position: relative;
+        /* Ensure it's positioned relative to the parent */
+        display: block;
+        /* Ensure the image behaves like a block-level element */
+    }
+
+    .Resume {
+        /* border: 3px solid red; */
+        height: fit-content;
+    }
+
+    .Resume .sub_text li {
+        /* border: 3px solid rgb(17, 0, 255); */
+        font-size: 3vw;
+        width: fit-content;
+        align-self: center;
+        height: fit-content;
+    }
+
+    .Resume .heading {
+        justify-self: center;
+        /* border: 3px solid rgb(0, 255, 13); */
+        margin-bottom: 0px;
+        font-size: 6vw;
+    }
+}

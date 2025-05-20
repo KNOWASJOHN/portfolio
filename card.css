@@ -1,0 +1,61 @@
+.stock-ticker {
+    /* border: 2px solid white; */
+    top: -50px;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select: none;
+    display: flex;
+    border-radius: 70px;
+    background-color: #ffc229;
+    --gap: 160px;
+    gap: var(--gap);
+    margin: auto;
+
+
+}
+
+.stock-ticker ul {
+    min-width: 100%;
+    /* border: 2px solid white; */
+    list-style: none;
+    flex-shrink: 0;
+    gap: var(--gap);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+}
+
+.stock-ticker ul li {
+
+    font-family: Boldonse, system-ui;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.stock-ticker ul li:hover {
+    cursor: var(--cursor-url), auto;
+    color: #ffffff;
+}
+
+.stock-ticker ul img {
+    /* border: 3px solid #ffffff; */
+    padding-top: 3vh;
+    opacity: 1;
+}
+
+.stock-ticker ul img:hover {
+    cursor: var(--cursor-url), auto;
+    filter: invert(1);
+    opacity: 1;
+
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}

@@ -1,0 +1,96 @@
+.Top .bg_image1 {
+    /* border: 3px solid red; */
+    overflow: hidden;
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: -1;
+    position: absolute;
+    animation: slide 2s ease-in-out;
+}
+.Top .bg_2{
+        /* border: 3px solid red; */
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -20px;
+        z-index: -1;
+        position: absolute;
+        animation: slide1 2s ease-in-out;
+}
+
+.Home .bg_image2 {
+    display: grid;
+    justify-items: flex-end;
+    width: 85%;
+    /* border: 3px solid red; */
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    animation: slide1 3s ease-out;
+
+}
+
+.Home .bg_image3 {
+    margin-top: 16rem;
+    margin-left: 10rem;
+    width: 85%;
+    /* border: 3px solid rgb(255, 255, 255); */
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    animation: slide2 4s ease-out;
+}
+
+@media (max-width: 700px) {
+    .Home .bg_image2 {
+        scale: 0.6;
+        margin-top: 80px;
+        margin-left: 20px;
+        /* border: 3px solid red; */
+    }
+
+    .Home .bg_image3 {
+        /* border: 3px solid red; */
+        scale: 0.6;
+        animation: slide2 6s ease-out;
+        margin-left: 0px;
+        margin-right: 100vw;
+    }
+    .Top .bg_2{
+        /* border: 3px solid red; */
+    }
+}
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide1 {
+    from {
+        transform: translateX(100%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
